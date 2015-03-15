@@ -15,7 +15,6 @@ if [ ! -z "${OPENSHIFT_PHP_VERSION}" ] && [ -d "${OPENSHIFT_PHP_DIR}/usr/php-${O
 elif [ -d "${OPENSHIFT_PHP_DIR}/usr/php-${version}/" ]; then
     PHP_VERSION="${version}"
 fi
-echo "Using PHP version ${PHP_VERSION}"
 
 PHP_VERSION_DIR=${OPENSHIFT_PHP_DIR}/usr/php-${PHP_VERSION}
 
