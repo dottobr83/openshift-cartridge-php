@@ -31,5 +31,5 @@ fi
 client_result ""
 client_result "PHP enviroment successfully installed."
 client_result ""
-client_result " Version: ${PHP_VERSION_DIR}"
+client_result " Version: ${PHP_VERSION}"
 client_result ""
