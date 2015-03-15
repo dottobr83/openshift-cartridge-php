@@ -13,7 +13,6 @@ if [ !-z "${OPENSHIFT_PHP_VERSION}" ] && [ -d "${OPENSHIFT_PHP_DIR}/usr/php-${OP
 elif [ -d "${OPENSHIFT_PHP_DIR}/usr/php-${version}/" ]; then
     PHP_VERSION="${version}"
 fi
-echo "Setting up PHP version ${PHP_VERSION}"
 
 PHP_VERSION_DIR=${OPENSHIFT_PHP_DIR}/usr/php-${PHP_VERSION}
 
@@ -27,3 +26,9 @@ echo "${PHP_VERSION}" > env/OPENSHIFT_PHP_VERSION
 echo "${PHP_VERSION_DIR}" > env/OPENSHIFT_PHP_VERSION_DIR
 echo "${PHP_VERSION_DIR}/bin" > env/OPENSHIFT_PHP_PATH_ELEMENT
 echo `${PHP_VERSION_DIR}/bin/php-config --extension-dir` > env/OPENSHIFT_PHP_EXTENSION_DIR
+
+client_result ""
+client_result "PHP enviroment created successfully."
+client_result ""
+client_result " Version: ${PHP_VERSION_DIR}"
+client_result ""
