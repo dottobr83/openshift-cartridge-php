@@ -19,5 +19,4 @@ Scaling:
   Max: -1
 Group-Overrides:
   - components:
-    - php-5.6
     - web_framework
