@@ -5,7 +5,7 @@ Current this cartridge works well the [boekkooi NGINX cartridge](https://github.
 
 You can add this cartridge to your application using:
 ```BASH
-rhc cartridge add -a myapp http://cartreflect-claytondev.rhcloud.com/reflect?github=boekkooi/openshift-cartridge-php
+rhc cartridge add -a myapp http://cartreflect-claytondev.rhcloud.com/github/boekkooi/openshift-cartridge-php
 ```
 
 ## Configuration
@@ -64,7 +64,7 @@ If you need another version you can compile it yourself and submit a PR to get i
 ### Compiling a new version
 To compile a new version you will first need a openshift application.
 ```BASH
-rhc create-app nginx http://cartreflect-claytondev.rhcloud.com/reflect?github=boekkooi/openshift-cartridge-nginx
+rhc create-app nginx http://cartreflect-claytondev.rhcloud.com/github/boekkooi/openshift-cartridge-nginx
 ```
 
 Now clone the repository and create a `php` folder. Now copy the `usr/compile` directory from [this](https://github.com/boekkooi/openshift-cartridge-php) repository.
@@ -82,6 +82,6 @@ Last but not least edit the `openshift-cartridge-php/manifest.yml` and add the v
 
 All done just commit and push to your `openshift-cartridge-php` repo and use:
 ```BASH
-rhc cartridge add -a myapp http://cartreflect-claytondev.rhcloud.com/reflect?github=<user>/openshift-cartridge-php
+rhc cartridge add -a myapp http://cartreflect-claytondev.rhcloud.com/github/<user>/openshift-cartridge-nginx
 ```
 
